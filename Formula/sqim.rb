@@ -1,7 +1,7 @@
 class Sqim < Formula
   desc "Milq CLI for building Xcode projects on Milq's remote build service"
   homepage "https://milq.ai"
-  license "Proprietary"
+  license :cannot_represent
   version "0.1.0"
 
   depends_on :macos
@@ -9,10 +9,10 @@ class Sqim < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/milq-ai/sqim-cli-releases/releases/download/v0.1.0/sqim_Darwin_arm64.tar.gz"
-      sha256 "b9496c09c94d618358ebf50c2c1125c93c11fb31c1ba0d0838fef83d151ffb8e"
+      sha256 "c863272d1a90bc4337566e64033acaf7caaf0c28e1b5deeefdf787b7cb007caf"
     else
       url "https://github.com/milq-ai/sqim-cli-releases/releases/download/v0.1.0/sqim_Darwin_x86_64.tar.gz"
-      sha256 "2661a50894b73ea80d6955b214e1ab4e4e77b6eb935d34e6e828ec4ef0fedd50"
+      sha256 "5d923478199c91e0ae0284cb13e608d70fab7a9a32d5881b9694716686dd1ef4"
     end
   end
 
